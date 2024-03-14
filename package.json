@@ -1,0 +1,57 @@
+{
+  "name": "vg-twitch-votes",
+  "version": "0.0.0",
+  "description": "small plugin to do twitch votes",
+  "homepage": "https://visiongaming.ch",
+  "author": {
+    "name": "jschuler",
+    "email": "jeremy.schuler@vjss.ch",
+    "url": "https://vjss.ch"
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "vg",
+    "twitch",
+    "votes",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "^2.0.0",
+    "dashboardPanels": [
+      {
+        "name": "panel",
+        "title": "Panel",
+        "width": 4,
+        "file": "panel.html",
+        "workspace": "Twitch",
+        "headerColor": "#525F78"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "votes.html",
+        "width": 1920,
+        "height": 1080,
+        "singleInstance": false
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "license": "Apache-2.0"
+}
